@@ -2,6 +2,11 @@ import sqlalchemy as db
 import typing
 from config import Config
 
+# Создание экземпляров 
+# users = Users('Users')
+# tokens = Tokens('Tokens')
+# users_tokens = UsersTokens('UsersTokens')
+
 class BaseModel():
     """Базовый класс для работы с таблицами MySQL."""
     def __init__(self, table_name: str, config: Config):
